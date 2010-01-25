@@ -50,6 +50,8 @@ You can optionally also supply:
 
 *:object =>* defaults to creating a new instance of an object using the camel-cased name of the attribute i.e. above that would be ProductVariation.new
 
+*:local =>* lets you specify the name of the form builder object inside the partial. Defaults to "f"
+
 remove_nested_fields_for(form_builder, dom_class)
 ------------------------------------------------
 remove_nested_fields_for adds a link to a javascript function that if new, removes the partial, and if existing sets a hidden field _marking it's removal _delete=1, informing rails to delete the record and hides the partial.
